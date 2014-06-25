@@ -10,8 +10,7 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'jquery-rails'
 gem 'jbuilder', '~> 2.0'
 gem 'spring',        group: :development
-gem 'google-api-client'
-gem 'musicbrainz', '0.7.6'
+# gem 'google-api-client'
 gem 'figaro'
 gem 'carrierwave'
 gem 'mini_magick'
@@ -19,9 +18,13 @@ gem 'bourbon'
 gem 'neat'
 gem 'font-awesome-sass'
 gem 'fog'
-gem 'omniauth'
-gem 'omniauth-facebook', '~> 1.4.1'
-gem 'youtube_it'
+# gem 'omniauth'
+# gem 'omniauth-facebook', '~> 1.4.1'
+
+#gems for playlist creation
+# gem 'youtube_it'
+gem 'spotify'
+gem 'soundcloud'
 
 group :development, :test do
 	gem 'pry-rails'
