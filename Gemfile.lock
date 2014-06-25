@@ -112,6 +112,8 @@ GEM
     guard-rspec (4.2.9)
       guard (~> 2.1)
       rspec (>= 2.14, < 4.0)
+    haml (4.0.5)
+      tilt
     hashie (2.1.2)
     hike (1.2.3)
     httmultiparty (0.3.14)
@@ -290,6 +292,7 @@ DEPENDENCIES
   fog
   font-awesome-sass
   guard-rspec
+  haml
   jbuilder (~> 2.0)
   jquery-rails
   launchy
