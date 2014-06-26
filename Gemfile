@@ -21,12 +21,15 @@ gem 'fog'
 # gem 'omniauth'
 # gem 'omniauth-facebook', '~> 1.4.1'
 
-gem 'haml'
+gem 'haml-rails'
 
 #gems for playlist creation
 # gem 'youtube_it'
+gem 'soundmanager-rails'
 gem 'spotify'
 gem 'soundcloud'
+
+gem 'newrelic_rpm'
 
 group :development, :test do
 	gem 'pry-rails'
