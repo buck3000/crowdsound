@@ -21,7 +21,7 @@ gem 'fog'
 # gem 'omniauth'
 # gem 'omniauth-facebook', '~> 1.4.1'
 
-gem 'haml'
+gem 'haml-rails'
 
 #gems for playlist creation
 # gem 'youtube_it'

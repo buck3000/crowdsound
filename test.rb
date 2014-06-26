@@ -18,4 +18,4 @@ tracks.each do |track|
   hold_hotness << client.get('/resolve', :url => "#{track.permalink_url}")
 end
 
-puts hold_hotness.last
+ap hold_hotness.last["id"]

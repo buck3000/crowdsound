@@ -5,11 +5,10 @@
     %meta{:name => "lang", :content => "en"}
     %meta{:name => "viewport", :content => "width=device-width, initial-scale=1"}
     %title 
-    %link{:href=>"/css/normalize.css", :media=>"screen", :rel=>"stylesheet", :type=>"text/css"}/
-    %link{:href=>"/css/application.css", :media=>"screen", :rel=>"stylesheet", :type=>"text/css"}/
+    = stylesheet_link_tag "application"
+    = javascript_include_tag "application"
 
     %script{:type => "text/javascript", :src => "//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"}
-    %script{:type => "text/javascript", :src => "/js/soundmanager2.js"}
-    %script{:type => "text/javascript", :src => "/js/application.js"}
+   
   %body
     = yield
