@@ -33,7 +33,6 @@ class SongsController < ApplicationController
   def search
     @song = Song.new
     puts params[:search]
-    @playlist = Playlist.find(params[:playlist_id])
     search_text = params[:search]
     @search_results = search_soundcloud(search_text)
     render :results
@@ -53,7 +52,9 @@ class SongsController < ApplicationController
   def search_soundcloud(query)
     puts "QUERY BELOW!!!!!!!!!!!:"
     puts query
-    client = SoundCloud.new(:client_id => ENV['CLIENT_ID'])
+    client = client = Soundcloud.new(:client_id => "af82df3718bc2926a6c6aae41e0de7f2",
+                        :client_secret => "eb54c6706ca20d73803873ce9e40e38a",
+                        :redirect_uri => '/')
     searched_tracks = client.get('/tracks', :q => query, limit: 10)
   end
 
