@@ -17,3 +17,8 @@
 
 # Ignore application configuration
 .env
+
+# Ignore application configuration
+/config/application.yml
+
+test.rb
