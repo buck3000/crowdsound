@@ -52,8 +52,8 @@ class SongsController < ApplicationController
   def search_soundcloud(query)
     puts "QUERY BELOW!!!!!!!!!!!:"
     puts query
-    client = client = Soundcloud.new(:client_id => "af82df3718bc2926a6c6aae41e0de7f2",
-                        :client_secret => "eb54c6706ca20d73803873ce9e40e38a",
+    client = SoundCloud.new(:client_id => ENV['client_id'],
+                        :client_secret => ENV['client_secret'],
                         :redirect_uri => '/')
     searched_tracks = client.get('/tracks', :q => query, limit: 10)
   end
